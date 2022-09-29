@@ -1,0 +1,326 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    background-color:hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 1.6rem;
+}
+
+#section-wrapper{
+
+    margin: 5em auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%) ;
+    border-radius: 1.5rem;
+}
+   
+
+.sections{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+
+.sections:last-of-type{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 2rem;
+ }
+
+/* stylinf of the input section side*/
+
+#select-tip-percentage{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  
+   }
+
+   .tip-per{
+     width: 90%;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+/*     font-size: 4rem; */
+    font-weight: bold;
+    text-align: center;
+     padding: 1rem 0;
+    vertical-align: middle;
+    border-radius: 0.5em;
+  }
+
+  .tip-per:hover{
+        background-color: hsl(172, 67%, 45%);
+  }
+
+.tip-per.active{
+   background-color: hsl(172, 67%, 45%);
+}
+
+
+/* styling the inputs and the buttons*/
+
+
+  input{
+    width: 100%;
+    font-size: 2.0rem;
+    margin: 0 auto;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    padding: 0.3em 1em 0.3em  1.8em;
+    cursor: pointer;
+    text-align: right;
+}
+
+input:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+input::placeholder{
+    color: hsl(185, 41%, 84%);
+}
+
+
+#custom-input{
+    margin: 0 auto;
+    background-color: hsl(185, 41%, 84%);
+    color : hsl(186, 14%, 43%);
+   align-items: center;
+  justify-content: center;
+  width: 90%;
+  box-sizing: border-box;
+ 
+
+ 
+}
+
+#custom-input::placeholder{
+  color: darkgray;
+}
+
+
+
+button{
+    margin-top: 7em;
+    background-color: hsl(172, 67%, 45%);;
+    color: hsl(183, 100%, 15%);
+    font-size: 2.0rem;
+    padding:  0.6em 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+   
+}
+
+button:hover, button:active{
+    background-color: hsl(186, 14%, 43%);
+}
+
+#errorText {
+  display: none;
+  float: right;
+  color: red;
+}
+
+/* the division between input sections*/
+
+.input-sections{
+    margin-top: 2em;
+    position: relative;
+}
+
+.input-sections svg {
+    position: absolute;
+    top: 2.3em;
+    left: 1em;
+}
+
+/* .input-sections input{
+    padding-left: 2em;
+} */
+
+
+
+/* styling the output section */
+
+#output-section-wrapper{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+ 
+}
+
+.total{
+    margin-top: 2em;
+}
+
+.amount{
+    float:right;
+    color: hsl(172, 67%, 45%);
+    font-size: 3rem;
+
+}
+
+.total h4{
+    color:white;
+}
+
+.total p{
+    color: hsl(186, 14%, 43%);
+}
+
+
+
+
+
+@media screen and (max-width: 319px) and (min-width: 0px){
+    #section-wrapper{
+       width: 100%;
+       border-radius: 4rem;
+        margin: 4em auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px;
+        gap: 2em;
+      
+    }
+       
+
+    button{
+        margin-top: 3.5em;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 425px) and (min-width: 320px){
+    #section-wrapper{
+       width: 100%;
+       border-radius: 4rem;
+        margin: 4em auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px;
+        gap: 2em;
+      
+    }
+       
+
+    button{
+        margin-top: 3.5em;
+        
+    }
+    
+}
+
+@media screen and (max-width: 750px) and (min-width: 426px){
+    #section-wrapper{
+       width: 100%;
+       border-radius: 4rem;
+        margin: 4em auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 425px 425px;
+        gap: 2em;
+      
+    }
+       
+
+    #select-tip-percentage{
+        
+        grid-template-rows: 6rem 6rem;
+       
+    
+       }
+
+       .tip-per, #custom{
+       
+        font-size: 1.8rem;
+        
+      
+      }
+
+    button{
+        margin-top: 3.5em;
+        
+    }
+
+
+
+      input, button{
+      
+        font-size: 2.5rem;
+       
+    }
+    
+    button{
+
+        margin-top: 6em;
+        
+    }
+}
+
+
+
+@media screen and (max-width:1440px) and (min-width:1100px){
+  
+    body {
+        font-size: 1.8rem;
+    }
+    #section-wrapper{
+      
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px;
+       
+      
+    }
+
+    #select-tip-percentage{
+        
+        grid-template-rows: 5rem 5rem;
+        align-items: center;
+        justify-items: center;
+        gap: 1em;
+    
+       }
+       
+    
+
+     
+    
+      input, button{
+      
+        font-size: 2.2rem;
+       
+    }
+    button{
+
+        margin-top: 6em;
+        
+    }
+    
+
+}
+
+
