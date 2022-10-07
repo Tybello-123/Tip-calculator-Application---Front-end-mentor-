@@ -94,7 +94,7 @@ function peopleInputFun () {
   //custom tip value should be nothing
 
   peopleValue = parseFloat(peopleInput.value)
-
+  calculateBill()
 
 
   //When people value of zero is entered 
@@ -106,7 +106,7 @@ function peopleInputFun () {
   else{
     error.style.display = 'none';
     peopleInput.style.border = 'none';
-      // calculateBill()
+      calculateBill()
   }
 }
 

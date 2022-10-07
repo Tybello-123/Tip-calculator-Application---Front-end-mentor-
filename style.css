@@ -21,6 +21,8 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+
+
 body{
     margin:0;
     padding:0;
@@ -29,6 +31,7 @@ body{
     background-color:hsl(185, 41%, 84%);
     font-family: 'Space Mono', monospace;
     font-size: 1.6rem;
+    overflow: hidden;
 }
 
 #heading{
@@ -36,14 +39,16 @@ body{
   color: hsl(183, 100%, 15%);
   font-size: 2.5rem;
   font-weight:bold;
-  margin-top: 0.5em;
+
+  position:relative;
+  top: 25px;
   letter-spacing: 5px;
   
 }
 
 #section-wrapper{
 
-    margin: 1.5em auto;
+    margin: 3em auto;
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -235,6 +240,10 @@ button:hover, button:active{
 
 
 @media screen and (max-width: 319px) and (min-width: 0px){
+
+  body{
+    overflow:scroll;
+  }
     #section-wrapper{
        width: 100%;
        border-radius: 4rem;
@@ -255,6 +264,11 @@ button:hover, button:active{
 
 
 @media screen and (max-width: 425px) and (min-width: 320px){
+
+   body{
+    overflow:scroll;
+  }
+  
       #heading{
 
 
@@ -289,6 +303,14 @@ button:hover, button:active{
 }
 
 @media screen and (max-width: 745px) and (min-width: 426px){
+
+  
+
+
+   body{
+    overflow:scroll;
+  }
+  
     #heading{
 
 
@@ -349,15 +371,18 @@ button:hover, button:active{
 
 
 @media screen and (max-width:1440px) and (min-width:1100px){
+
+   body{
+    overflow: hidden;
+  }
   
     body {
         font-size: 1.8rem;
     }
 
   #heading{
-
-  margin-top: 0.8em;
-
+  font-size: 3rem;
+  top: 40px;
   
 }
 
@@ -365,7 +390,7 @@ button:hover, button:active{
       
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 450px;
-        margin: 2.5em auto;
+        margin: 4.0em auto;
       
     }
 
